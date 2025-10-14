@@ -3,7 +3,7 @@ import React from 'react'
 export function home() {
   
   return(
-    <body>
+    <div>
     <nav className="navbar">
       <ul className="nav-list">
         <li className="nav-logo">
@@ -30,7 +30,9 @@ export function home() {
       <img src="/images/heber-davis-X_55Pa9E8h4-unsplash.jpg" alt="a man working" />
       </div>
     </div>
-    </body>
+
+    <footer></footer>
+    </div>
 
     
   )
