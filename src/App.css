@@ -61,3 +61,69 @@ footer{
   height: 30px;
   background-color: oklch(85.2% 0.199 91.936);
 }
+
+h2{
+  text-decoration: underline;
+  display: grid;
+  place-items: center;
+  font-family: 'BBH Sans Bartle', sans-serif;
+  font-weight: 200;
+}
+.product-display{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2em;
+  align-items: center;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.card{
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  overflow: hidden;
+  grid-template-rows: 50% 30% 50%;
+}
+
+.card h3{
+  background-color: #007acc;
+  color: white;
+  margin: 0;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+.price{
+  padding: 0 1em 1em;
+  font-size: 0.9em;
+  color: #333;
+  margin: 0;
+}
+
+button{
+  background-color:oklch(85.2% 0.199 91.936);
+  border: none;
+  color: black;
+  padding: 15px;
+  width: 200px;
+  height: 50px;
+}
