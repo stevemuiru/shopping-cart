@@ -25,9 +25,9 @@ export function home() {
     </nav>
 
     <div className="home-content">
-      <h1>EVERYDAY ESSENTIALS BUILT TO HANDLE ANYTHING</h1>
+      <h1>everyday essentials built to handle anything</h1>
       <div className="home-logo">
-      <img src="/images/heber-davis-X_55Pa9E8h4-unsplash.jpg" alt="a man working" />
+      <img src="src/images/Carhartt exports/b2c5a6268ff0128f5e11ae70e44fbc35.jpg" alt="a man working" />
       </div>
     </div>
 

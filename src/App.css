@@ -48,7 +48,8 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   font-family: 'BBH Sans Bartle', sans-serif;
-  font-weight: 400;  
+  font-weight: 400; 
+  text-transform: capitalize; 
 }
 
 .home-logo{
@@ -126,4 +127,16 @@ button{
   padding: 15px;
   width: 200px;
   height: 50px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.product-img{
+  width: 30px;
+}
+
+.product-img:hover{
+  transform: scale(0, 1);
 }
