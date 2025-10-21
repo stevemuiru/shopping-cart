@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function home() {
+export function Home() {
   
   return(
     <div>
