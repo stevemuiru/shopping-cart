@@ -19,8 +19,10 @@ export function Shop(){
     
 
 
-    const handleClick = () => {
-      setCart([...cart, product])
+    const handleClick = (product) => {
+      const productFind = products.find(product => product.id === product.id)
+
+
     }
 
     return (
