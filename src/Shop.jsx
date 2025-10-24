@@ -19,10 +19,21 @@ export function Shop(){
     
 
 
-    const handleClick = (product) => {
-      const productFind = products.find(product => product.id === product.id)
-
-
+    const handleClick = (clickedProduct) => {
+      const foundItem = cart.find(item => item.id === clickedProduct.id)
+      
+      if(foundItem) {
+        const updatedItem = cart.map(item => {
+            if(item.id === clickedProduct.id) {
+                return {...item, quantity: item.quantity + 1 }
+            }
+            return item;
+        });
+        setCart(updatedItem)
+      } else { 
+        const newItem = {...clickedProduct, quantity : 1 }
+        setCart([...cart, newItem])
+      }
     }
 
     return (
