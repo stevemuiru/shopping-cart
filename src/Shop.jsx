@@ -1,4 +1,5 @@
 import React from 'react'
+import { Cart } from './Cart'
 import { useState } from 'react' 
 
 export function Shop(){
@@ -34,6 +35,11 @@ export function Shop(){
         const newItem = {...clickedProduct, quantity : 1 }
         setCart([...cart, newItem])
       }
+    }
+
+    const removeFromCart = (productId) => {
+        const filteredCart = cart.filter(item => item.id !== productId)
+        setCart(filteredCart)
     }
 
     return (

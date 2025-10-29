@@ -27,7 +27,7 @@ export function Home() {
     <div className="home-content">
       <h1>everyday essentials built to handle anything</h1>
       <div className="home-logo">
-      <img src="src/images/Carhartt exports/b2c5a6268ff0128f5e11ae70e44fbc35.jpg" alt="a man working" />
+      <img src="/images/Carhartt exports/b2c5a6268ff0128f5e11ae70e44fbc35.jpg" alt="a man working" />
       </div>
     </div>
 
