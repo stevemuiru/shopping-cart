@@ -26,7 +26,7 @@ export function Shop(){
       if(foundItem) {
         const updatedItem = cart.map(item => {
             if(item.id === clickedProduct.id) {
-                return {...item, quantity: item.quantity + 1 }
+                return {...item, quantity: item.quantity + 1 } 
             }
             return item;
         });
@@ -38,8 +38,16 @@ export function Shop(){
     }
 
     const removeFromCart = (productId) => {
-        const filteredCart = cart.filter(item => item.id !== productId)
-        setCart(filteredCart)
+        setCart.map(item => {
+            if(item.id === productId) {
+             if(item > 1) {
+                return {...item, quantity: item.quantity - 1}
+             } else{
+                return null
+             }
+            }
+            return item
+        }).filter(Boolean)
     }
 
     return (
@@ -126,6 +134,8 @@ export function Shop(){
             </div>
 
 
+            <Cart cart={cart} removeFromCart={removeFromCart} />
         </div>
+        
     )
 }

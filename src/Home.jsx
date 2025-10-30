@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom"
+
 
 export function Home() {
   
@@ -12,13 +14,13 @@ export function Home() {
 
         <div className="nav-items">
           <li className="nav-item">
-            <a href="">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <a href="">Shop</a>
+            <Link to="/shop">Shop</Link>
           </li>
           <li className="nav-item">
-           <a href="">Cart</a>
+           <Link to="/cart">Cart</Link>
           </li>
         </div>
       </ul>
@@ -27,11 +29,13 @@ export function Home() {
     <div className="home-content">
       <h1>everyday essentials built to handle anything</h1>
       <div className="home-logo">
-      <img src="/images/Carhartt exports/b2c5a6268ff0128f5e11ae70e44fbc35.jpg" alt="a man working" />
+      <img src="/images/Carhartt exports/carhartthomepage.jpg" alt="a man working" />
       </div>
     </div>
 
-    <footer></footer>
+    <footer> 
+      <p className='footer-details'>All rights reserved</p>
+    </footer>
     </div>
 
     

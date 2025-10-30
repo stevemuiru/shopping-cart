@@ -29,7 +29,7 @@
 }
 
 .nav-item{
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .nav-item a {
@@ -37,12 +37,14 @@
   text-decoration: none
 }
 
-.home-content{
+.home-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;      
 }
+
 
 h1 {
   font-size: 3.2em;
@@ -54,6 +56,7 @@ h1 {
 
 .home-logo{
   width: 100%;
+  max-width: 600px;
   height: auto;
 }
 
@@ -143,4 +146,8 @@ button:hover{
 
 .product-img:hover{
   transform: scale(1.03);
+}
+
+.footer-details{
+  color: oklch(14.1% 0.005 285.823);
 }
