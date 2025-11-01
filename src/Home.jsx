@@ -10,7 +10,7 @@ export function Home() {
             <img src="/images/carhartt-logo.png" alt="logo" />
           </li>
 
-          {/* Nav items on the right */}
+          
           <li className="nav-items">
             <ul className="nav-links">
               <li className="nav-item">
@@ -38,7 +38,7 @@ export function Home() {
       </div>
 
       <footer>
-        <p className="footer-details">All rights reserved</p>
+        <p className="footer-details">Copyright © 2025 Carhartt, Inc. All Rights Reserved.</p>
       </footer>
     </div>
   );

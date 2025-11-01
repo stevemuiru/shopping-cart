@@ -2,12 +2,12 @@ import React from 'react'
 import { Cart } from './Cart'
 import { useState } from 'react' 
 
-export function Shop(){
+export function Shop({cart, setCart}){
 
-    const[cart, setCart] = useState([])
+    
 
 
-    const products = [
+  const products = [
 
         {id: 1, name: "Detroit style jacket", price: 126, image: "/images/Carhartt exports/a135d43f87141338e967fbf723a74853.jpg" },
         {id : 2, name: "Loose Sid Trousers", price: 80, image: '/images/Carhartt exports/0e1869609b94c79cbc74d2ef207185ec.jpg' },
@@ -52,90 +52,24 @@ export function Shop(){
 
     return (
         <div>
-            <h2>Our Shop</h2>
-            
-            <div className='product-display'>
+          <h2>Our Shop</h2>
+          <div className='product-display'>
             <div className='grid'>
-                {products.map(product => (
-                  <div className='card' key={product.id}>
-                  <img src={product.image} className='product-img' alt='a jacket' />
+              {products.map(product => (
+                <div className='card' key={product.id}>
+                  <img src={product.image} className='product-img' alt={product.name} />
                   <div className='product-details'>
-                        <h3>{product.name}</h3>  
-                      <p className='price'>{product.price}</p>
-                      <button type='button' onClick={() => handleClick(products)}>Add to cart</button>
+                    <h3>{product.name}</h3>
+                    <p className='price'>{product.price}$</p>
+                    <button type='button' onClick={() => handleClick(product)}>Add to cart</button>
                   </div>
-                  </div>
-                ))}
-            </div>
-
-            <div className='grid'>
-                <div className='card' key={products.id}>
-                <img src={products.image} className='product-img' alt='a sid trouser' />
-                <div className='product-details'>
-                    <h3>{products.name}</h3>
-                    <p className='price'>{products.price}</p>
-                    <button type='button' onClick={() => handleClick(products)}>Add to cart</button>
                 </div>
-                </div> 
-               
+              ))}
             </div>
-
-            <div className='grid'>
-                
-                  <div className='card' key={products.id}>
-                  <img src={products.image} className='product-img' alt='a tshirt' />
-                  <div className='product-details'>
-                      <h3>{products.name}</h3>
-                      <p className='price'>{products.price}</p>
-                      <button type='button' onClick={() => handleClick(products)}>Add to cart</button>
-                  </div>
-                  </div> 
-               
-            </div>
-
-            <div className='grid'>
-                   <div className='card' key={products.id}>
-                   <img src={products.image} className='product-img' alt='a pair of boots' />
-                   <div className='product-details'>
-                       <h3>{products.name}</h3>
-                       <p className='price'>{products.price}</p>
-                       <button type='button' onClick={() => handleClick(products)}>Add to cart</button>
-                   </div>
-                   </div> 
-              
-            </div>
-
-            <div className='grid'>
-                
-                   <div className='card' key={products.id}>
-                   <img src={products.image} className='product-img' alt='an overall' />
-                   <div className='product-details'>
-                       <h3>{products.name}</h3>
-                       <p className='price'>{products.price}</p>
-                       <button type='button' onClick={() => handleClick(products)}>Add to cart</button>
-                   </div>
-                   </div> 
-              
-            </div>
-
-            <div className='grid'>
-                
-                  <div className='card' key={products.id}>
-                  <img src={products.image} className='product-img' alt='a beenie' />
-                  <div className='product-details'>
-                      <h3>{products.name}</h3>
-                      <p className='price'>{products.price}</p>
-                      <button type='button' onClick={() => handleClick(products)}>Add to cart</button>
-                  </div>
-                  </div> 
-        
-
-               </div>
-            </div>
-
-
-            <Cart cart={cart} removeFromCart={removeFromCart} />
+          </div>
+      
+          <Cart cart={cart} removeFromCart={removeFromCart} />
         </div>
-        
-    )
+      )
+      
 }

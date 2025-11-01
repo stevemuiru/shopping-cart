@@ -85,6 +85,7 @@ h2{
   text-align: center;
   padding: 2em;
   align-items: center;
+  gap: 20px;
 }
 
 .grid{
@@ -93,6 +94,7 @@ h2{
   max-width: 1000px;
   width: 100%;
   margin-top: 1em;
+  gap: 2em;
 }
 
 .card {
@@ -104,10 +106,15 @@ h2{
   overflow: hidden;
 }
 
+.card:hover {
+  transform: scale(1.02);
+  border-color: oklch(85.2% 0.199 91.936);;
+}
+
+
 
 .card h3{
-  background-color: #007acc;
-  color: white;
+  color: #333;
   margin: 0;
   padding: 0.5em;
   display: flex;
@@ -116,7 +123,6 @@ h2{
 }
 
 .product-details{
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1em;
@@ -124,7 +130,7 @@ h2{
 
 .price{
   padding: 0 1em 1em;
-  font-size: 0.9em;
+  font-size: 1.9em;
   color: #333;
   margin: 0;
 }
@@ -136,6 +142,8 @@ button{
   padding: 15px;
   width: 200px;
   height: 50px;
+  border-radius: 12px;
+
 }
 
 button:hover{
