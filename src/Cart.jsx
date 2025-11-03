@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Cart({ cart, removeFromCart }) {
+export function Cart({ cart, setCart }) {
   if (cart.length === 0) {
     return <p>Your cart is empty, continue shopping.</p>;
   }

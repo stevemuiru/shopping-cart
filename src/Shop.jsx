@@ -37,18 +37,19 @@ export function Shop({cart, setCart}){
       }
     }
 
-    const removeFromCart = (productId) => {
-        setCart.map(item => {
-            if(item.id === productId) {
-             if(item > 1) {
-                return {...item, quantity: item.quantity - 1}
-             } else{
-                return null
-             }
-            }
-            return item
-        }).filter(Boolean)
-    }
+   const removeFromCart = (productId) => {
+    const updatedArray = cart.map(item => {
+      if(item.id === productId) {
+        if(item.quantity > 1) {
+          return {...item, quantity: item - 1}
+        } else {
+          return null
+        }
+      }
+      return item
+    }).filter(Boolean) 
+    setCart(updatedArray)
+   }
 
     return (
         <div>
@@ -68,7 +69,7 @@ export function Shop({cart, setCart}){
             </div>
           </div>
       
-          <Cart cart={cart} removeFromCart={removeFromCart} />
+          <Cart cart={cart} removeFromCart={removeFromCart(products.id)} />
         </div>
       )
       
