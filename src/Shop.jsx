@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import { Cart } from './Cart'
 import { useState } from 'react' 
 
@@ -24,13 +25,13 @@ export function Shop({cart, setCart}){
       const foundItem = cart.find(item => item.id === clickedProduct.id)
       
       if(foundItem) {
-        const updatedItem = cart.map(item => {
+        const updatedItems = cart.map(item => {
             if(item.id === clickedProduct.id) {
                 return {...item, quantity: item.quantity + 1 } 
             }
             return item;
         });
-        setCart(updatedItem)
+        setCart(updatedItems)
       } else { 
         const newItem = {...clickedProduct, quantity : 1 }
         setCart([...cart, newItem])
@@ -48,6 +49,7 @@ export function Shop({cart, setCart}){
       }
       return item
     }).filter(Boolean) 
+    
     setCart(updatedArray)
    }
 
@@ -68,9 +70,13 @@ export function Shop({cart, setCart}){
               ))}
             </div>
           </div>
-      
-          <Cart cart={cart} removeFromCart={removeFromCart(products.id)} />
+          
+          {cart.length > 0 && (
+           <div className="cart-link">
+            <Link to="/cart">Proceed to Cart →</Link>
+         </div>
+)}
         </div>
       )
-      
-}
+} 
+
