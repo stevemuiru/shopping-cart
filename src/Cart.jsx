@@ -5,6 +5,12 @@ export function Cart({ cart, removeFromCart }) {
     return <p className="cart-p">Your cart is empty, continue shopping.</p>;
   }
 
+  let total = 0
+
+  for(let i = 0; i < cart.length; i++) {
+    const total = total + (item.price * item.quantity)
+  }
+
   
 
   return (
@@ -22,9 +28,12 @@ export function Cart({ cart, removeFromCart }) {
             <span className="cart-name">${product.price}</span>
             <span className="cart-name">Qty: {product.quantity}</span>
             <button onClick={() => removeFromCart(product.id)}>Remove</button>
+            <p>Total:${total}</p>
           </li>
         ))}
       </ul>
     </div>
+
+  
   );
 }
