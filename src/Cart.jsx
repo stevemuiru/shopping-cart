@@ -8,7 +8,7 @@ export function Cart({ cart, removeFromCart }) {
   let total = 0
 
   for(let i = 0; i < cart.length; i++) {
-    const total = total + (item.price * item.quantity)
+   total = total + (cart[i].price * cart[i].quantity)
   }
 
   
@@ -28,10 +28,14 @@ export function Cart({ cart, removeFromCart }) {
             <span className="cart-name">${product.price}</span>
             <span className="cart-name">Qty: {product.quantity}</span>
             <button onClick={() => removeFromCart(product.id)}>Remove</button>
-            <p>Total:${total}</p>
           </li>
         ))}
       </ul>
+      <div className="total-checkout">
+      <p className="total">Total:${total}</p>
+      <button type="button">Checkout</button>
+      </div>
+     
     </div>
 
   

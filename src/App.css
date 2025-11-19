@@ -143,6 +143,7 @@ button{
   width: 200px;
   height: 50px;
   border-radius: 12px;
+  font-family:'Roboto', sans-serif ;
 
 }
 
@@ -206,5 +207,16 @@ button:hover{
 .cart-name {
   flex: 1;
 }
+.total-checkout{
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.total{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
 
 
