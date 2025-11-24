@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Cart({ cart, removeFromCart }) {
   if (cart.length === 0) {
-    return <p className="cart-p">Your cart is empty, continue shopping.</p>;
+    return <p className="cart-p">Your cart is empty, <Link to="/shop">continue shopping</Link></p>;
   }
 
   let total = 0

@@ -166,7 +166,7 @@ button:hover{
 .footer-details{
   color: oklch(14.1% 0.005 285.823);
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
 }
@@ -189,6 +189,7 @@ button:hover{
   color: oklch(50.5% 0.213 27.518);
   display: grid;
   place-items: center;
+  text-decoration: none;
 }
 
 .cart-img {

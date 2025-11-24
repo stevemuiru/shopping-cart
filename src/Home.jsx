@@ -38,7 +38,7 @@ export function Home() {
       </div>
 
       <footer>
-        <p className="footer-details">Copyright © 2025 Carhartt, Inc. All Rights Reserved.</p>
+        <div className="footer-details">Copyright © 2020 Carhartt, Inc. All Rights Reserved.</div>
       </footer>
     </div>
   );
