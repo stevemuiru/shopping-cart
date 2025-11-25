@@ -1,16 +1,59 @@
-# React + Vite
+🛒 Shopping Cart – React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and modern shopping cart application built with React and Vite.
+The project focuses on learning and practicing core React concepts such as:
 
-Currently, two official plugins are available:
+Components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+useState and useEffect
 
-## React Compiler
+State lifting and props
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Updating arrays and objects in state
 
-## Expanding the ESLint configuration
+Cart logic (add/remove/update)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Conditional rendering
+
+React Router navigation
+
+Users can browse products, add them to the cart, change quantities, view totals, and continue shopping.
+The goal of this project is to build a clean, functional UI while understanding how a real shopping cart works under the hood.
+
+⭐ Features
+
+Browse a list of products
+
+Add products to the cart
+
+Increase or decrease item quantity
+
+Remove items from cart
+
+View total price and number of items
+
+Simple, clean UI
+
+Fast development with Vite
+
+🎯 What I Learned
+
+How to manage complex state in React
+
+How to update arrays using .map() and .filter()
+
+How to structure reusable React components
+
+How to implement cart logic (finding items, updating quantity, adding new items)
+
+How to deploy a Vite project using GitHub Pages
+
+🚀 Tech Stack
+
+React
+
+Vite
+
+JavaScript (ES6+)
+
+CSS

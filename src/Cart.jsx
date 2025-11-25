@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export function Cart({ cart, removeFromCart }) {
   if (cart.length === 0) {
-    return <p className="cart-p">Your cart is empty, <Link to="/shop">continue shopping</Link></p>;
+    return <p className="cart-p">Your cart is empty,<Link to="/shop" className="continue-shopping">continue shopping</Link></p>;
   }
 
   let total = 0

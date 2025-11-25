@@ -218,6 +218,12 @@ button:hover{
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
 }
+.continue-shopping{
+  text-decoration: none;
+  font-size: 1.8rem;
+  color:black;
+  text-decoration: underline;
+}
 
 
 
