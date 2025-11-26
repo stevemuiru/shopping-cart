@@ -56,4 +56,4 @@ Vite
 
 JavaScript (ES6+)
 
-CSS
+Css
