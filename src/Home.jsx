@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import carhartthomepageImg from "./assets/images/carhartt exports/carhartthomepage.jpg"
+import homepageImg from "./assets/images/carhartt/homepage.jpg";
+import logoImg from "./assets/images/carhartt/logo.png"
 
 export function Home() {
   return (
@@ -8,7 +9,7 @@ export function Home() {
       <nav className="navbar">
         <ul className="nav-list">
           <li className="nav-logo">
-            <img src="/images/carhartt-logo.png" alt="logo" />
+          <img src={logoImg} alt="Logo" />
           </li>
 
           
@@ -31,10 +32,7 @@ export function Home() {
       <div className="home-content">
         <h1>everyday essentials built to handle anything</h1>
         <div className="home-logo">
-          <img
-            src= 'carhartthomepageImg'
-            alt="a man working"
-          />
+        <img src={homepageImg} alt="Homepage" />
         </div>
       </div>
 

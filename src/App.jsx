@@ -4,12 +4,12 @@ import { Shop } from "./Shop";
 import { Cart } from "./Cart";
 import { useState } from "react";
 import './App.css';
-import jacketImg from "./assets/images/Carhartt exports/jacketImg";
-import trouserImg from "./assets/images/Carhartt exports/trouserImg";
-import tshirtImg from "./assets/images/Carhartt exports/tshirtImg";
-import bootsImg from "./assets/images/Carhartt exports/bootsImg";
-import overallImg from "./assets/images/Carhartt exports/overallImg";
-import beenieImg from "./assets/images/Carhartt exports/beenieImg";
+import jacketImg from "./assets/images/carhartt/jacket.png";
+import trouserImg from "./assets/images/carhartt/trouser.png";
+import tshirtImg from "./assets/images/carhartt/tshirt.png";
+import bootsImg from "./assets/images/carhartt/boots.png";
+import overallImg from "./assets/images/carhartt/overall.png";
+import beenieImg from "./assets/images/carhartt/beenie.png";
 
 
 const products = [
