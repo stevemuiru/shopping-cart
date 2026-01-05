@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import carhartthomepageImg from "./assets/images/carhartt exports/carhartthomepage.jpg"
 
 export function Home() {
   return (
@@ -31,7 +32,7 @@ export function Home() {
         <h1>everyday essentials built to handle anything</h1>
         <div className="home-logo">
           <img
-            src="/images/Carhartt exports/carhartthomepage.jpg"
+            src= 'carhartthomepageImg'
             alt="a man working"
           />
         </div>
