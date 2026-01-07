@@ -12,6 +12,7 @@ import overallImg from "./assets/images/carhartt/overall.jpg";
 import beenieImg from "./assets/images/carhartt/beenie.jpg";
 
 
+
 const products = [
 
   {id: 1, name: "Detroit style jacket", price: 126, image: jacketImg },

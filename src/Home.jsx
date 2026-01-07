@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import homepageImg from "./assets/images/carhartt/homepage.jpg";
-import logoImg from "./assets/images/carhartt/logo.png"
+import logoImg from "./assets/images/carhartt/logo.png";
+
 
 export function Home() {
   return (
