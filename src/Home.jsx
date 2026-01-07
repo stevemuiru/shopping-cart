@@ -38,7 +38,40 @@ export function Home() {
       </div>
 
       <footer>
-        <div className="footer-details">Copyright © 2020 Carhartt, Inc. All Rights Reserved.</div>
+        <div className="footer-content">
+         <div className="about">
+          <h3>about</h3>
+          <ul className="about-details">
+            <li>About Carhartt</li>
+            <li>Newsletter</li>
+            <li>Career opportunities</li>
+          </ul>
+         </div>
+
+         <div className="help">
+          <h3>help</h3>
+          <ul className="help-details">
+            <li>contact us</li>
+            <li> FAQ</li>
+            <li>Warranty</li>
+            <li>Returns & Refunds</li>
+          </ul>
+         </div>
+
+         <div className="capital-brands">
+          <h3>Capital Brands</h3>
+          <li>our brands</li>
+          <li>carhartt company gear</li>
+          <li>work in <progress></progress></li>
+         </div>
+
+
+        </div>
+
+        <div className="terms">
+          <p>Terms of sale | terms of use | privacy policy</p>
+        </div>
+        <div className="footer-details">Copyright © 2026 Carhartt, Inc. All Rights Reserved.</div>
       </footer>
     </div>
   );
