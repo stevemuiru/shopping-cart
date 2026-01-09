@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import homepageImg from "./assets/images/carhartt/homepage.jpg";
-import logoImg from "./assets/images/carhartt/logo.png";
+import logoImg from "./assets/images/logo.png";
 
 
 export function Home() {
@@ -40,7 +40,7 @@ export function Home() {
       <footer>
         <div className="footer-content">
          <div className="about">
-          <h3>about</h3>
+          <h3>ABOUT</h3>
           <ul className="about-details">
             <li>About Carhartt</li>
             <li>Newsletter</li>
@@ -49,27 +49,27 @@ export function Home() {
          </div>
 
          <div className="help">
-          <h3>help</h3>
-          <ul className="help-details">
-            <li>contact us</li>
+          <h3>HELP</h3>
+          <ul className= "about-details">
+            <li>Contact us</li>
             <li> FAQ</li>
             <li>Warranty</li>
             <li>Returns & Refunds</li>
           </ul>
          </div>
 
-         <div className="capital-brands">
-          <h3>Capital Brands</h3>
-          <li>our brands</li>
-          <li>carhartt company gear</li>
-          <li>work in <progress></progress></li>
+         <div className="about-details">
+          <h3>CAPITAL BRANDS</h3>
+          <li>Our brands</li>
+          <li>Carhartt company gear</li>
+          <li>Work in progress</li>
          </div>
 
 
         </div>
 
         <div className="terms">
-          <p>Terms of sale | terms of use | privacy policy</p>
+          <p>Terms of sale | Terms of use | Privacy policy</p>
         </div>
         <div className="footer-details">Copyright © 2026 Carhartt, Inc. All Rights Reserved.</div>
       </footer>
