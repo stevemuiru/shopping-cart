@@ -5,7 +5,7 @@ import { Cart } from "./Cart";
 import { useState } from "react";
 import './App.css';
 import jacketImg from "./assets/images/carhartt/jacket.jpg";
-import trouserImg from "./assets/images/carhartt/trouser.jpg";
+import trouserImg from ".assets/images/carhartt/trouser.jpg"
 import tshirtImg from "./assets/images/carhartt/tshirt.jpg";
 import bootsImg from "./assets/images/carhartt/boots.jpg";
 import overallImg from "./assets/images/carhartt/overall.jpg";
